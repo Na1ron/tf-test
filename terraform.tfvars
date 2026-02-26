@@ -4,5 +4,7 @@ proxmox_endpoint = "https://prox-lab:8006/api2/json"
 proxmox_api_token = "REPLACE_ME"
 
 template_name = "ubuntu-24.04-template"
+# Optional fallback when template_name lookup doesn't return vm_id in your provider/API setup.
+# template_vm_id = 9000
 
 ssh_public_key = "ssh-ed25519 REPLACE_ME"
