@@ -21,6 +21,13 @@ variable "template_name" {
   type = string
 }
 
+variable "template_vm_id" {
+  type        = number
+  default     = null
+  nullable    = true
+  description = "Optional explicit template VM ID fallback when lookup by template_name does not return vm_id."
+}
+
 variable "vm_bridge" {
   type    = string
   default = "vmbr0"

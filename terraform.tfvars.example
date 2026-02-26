@@ -1,10 +1,10 @@
 proxmox_endpoint = "https://prox-lab:8006/api2/json"
 
 # Prefer setting this via TF_VAR_proxmox_api_token environment variable.
-proxmox_api_token = "REPLACE_ME"
+proxmox_api_token = "root@pam!terraform=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 template_name = "ubuntu-24.04-template"
 # Optional fallback when template_name lookup doesn't return vm_id in your provider/API setup.
 # template_vm_id = 9000
 
-ssh_public_key = "ssh-ed25519 REPLACE_ME"
+ssh_public_key = "ssh-ed25519 AAAA... user@host"
