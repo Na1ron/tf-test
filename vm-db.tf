@@ -3,6 +3,8 @@ resource "proxmox_virtual_environment_vm" "db" {
   name      = "db-1"
   node_name = var.node_name
 
+  depends_on = [proxmox_virtual_environment_vm.web]
+
   clone {
     vm_id = local.template_vm_id
   }
